@@ -8,31 +8,26 @@ function createGame (player1, hour, player2) {
     `
 }
 
-
+let delay = -0.4;
 function createCard (date, day, games) {
+    delay = delay + 0.4;
     return `
-    <main id="cards">
-        <div class="card">
+        <div class="card" style="animation-delay": ${delay}s">
             <h2>${date} <span>${day}</span></h2>
 
             <ul>
               ${games}
             </ul>
+        </div>
 
-    </main>
-    `
+        `
 }
 
-document.querySelector("#app").innerHTML = `
+document.querySelector("#cards").innerHTML = 
 
-    <header>
-       <img src="./assets/logo.svg" alt="Logo NLW">
-    </header>
+       createCard('24/11', 'quinta', createGame('brazil', '16:00', 'serbia')) +
+       createCard('28/11', 'segunda', createGame('brazil', '13:00', 'switzerland')) +
+       createCard('02/12', 'sexta', createGame('brazil', '16:00', 'cameroon'))
 
-    <main id="cards">
-       ${createCard('24/11', 'quinta', createGame('brazil', '16:00', 'serbia'))}
-       ${createCard('28/11', 'segunda', createGame('brazil', '13:00', 'switzerland'))}
-       ${createCard('02/12', 'sexta', createGame('brazil', '16:00', 'cameroon'))}
-    </main>
-`
+
 
