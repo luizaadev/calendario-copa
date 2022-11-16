@@ -1,3 +1,3 @@
-Calendário com os jogos do Brasil na primeira fase da Copa!
+Nesse projeto fiz um pequeno calendário com os primeiros jogos do Brasil na Copa do Mundo!
 
-veja aqui: https://luizaadev.github.io/calendario-copa/
+<strong>Você pode ver aqui: https://luizaadev.github.io/calendario-copa/</strong>
